@@ -15,9 +15,9 @@ function HomePage(props) {
                     <h1>Josh Fieldhouse</h1>
                     <h2>Web Developer</h2>
                 </div>
-                <div>
-                    <img src={gitHubIcon} alt='GitHub link'></img>
-                    <img src={linkedInIcon} alt='LinkedIn link'></img>
+                <div className={classes.btnContainer}>
+                    <img src={gitHubIcon} alt='GitHub link' className={classes.btn}></img>
+                    <img src={linkedInIcon} alt='LinkedIn link' className={classes.btn}></img>
                 </div>
             </div>
 		</section>

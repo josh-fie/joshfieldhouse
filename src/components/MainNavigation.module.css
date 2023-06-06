@@ -5,8 +5,10 @@
     height: 100vh;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 25vh 0;
+    position: fixed;
+    z-index: 10;
 }
 
 /* .buttonsContainer {
@@ -21,7 +23,6 @@
     padding: 15px 25px;
     margin: 10px 0px;
     width: 100%;
-    background-color: darkslategray;
 }
 
 .nav img {
@@ -29,5 +30,5 @@
 }
 
 .nav a.linkActive {
-    background-color: rgba(0, 0, 0, 0.4);
+    filter: invert();
 }
