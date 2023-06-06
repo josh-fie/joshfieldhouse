@@ -1,0 +1,25 @@
+.projectNav {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.projectNav > div {
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.projectNav img {
+    width: 50px;
+}
+
+.projectNav a.linkActive {
+    background-color: rgba(0, 0, 0, 0.4);
+}

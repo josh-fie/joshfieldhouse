@@ -1,0 +1,39 @@
+Video by Tom Fisk: https://www.pexels.com/video/aerial-view-of-a-foggy-landscape-2560897/
+
+**Showcase Homepage Background Video**
+
+<a href="https://www.flaticon.com/free-icons/contact" title="contact icons">Contact icons created by th studio - Flaticon</a>
+
+**Contact Us Letter Icon**
+
+<a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Home button icons created by Freepik - Flaticon</a>
+
+**Home Icon**
+
+<a href="https://www.flaticon.com/free-icons/information" title="information icons">Information icons created by zafdesign - Flaticon</a>
+
+**About me icon**
+
+<a href="https://www.flaticon.com/free-icons/project" title="project icons">Project icons created by Freepik - Flaticon</a>
+
+**Projects/Layers Icon**
+
+<a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Dave Gandy - Flaticon</a>
+
+**GitHub Icon**
+
+<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+
+**LinkedIn Icon**
+
+<a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+
+**Email Letter Icon**
+
+<a href="https://www.flaticon.com/free-icons/internet" title="internet icons">Internet icons created by Freepik - Flaticon</a>
+
+**Web Link Icon** (For Netlify)
+
+<a href="https://www.flaticon.com/free-icons/microsoft" title="microsoft icons">Microsoft icons created by Retinaicons - Flaticon</a>
+
+**Microsoft (Windows) logo**

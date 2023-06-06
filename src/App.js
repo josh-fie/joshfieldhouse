@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
+
+import Layout from './layouts/Layout';
+import ProjectsLayout from './layouts/ProjectsLayout';
+
+import HomePage from './pages/HomePage';
+import AboutMePage from './pages/AboutMePage';
+import ErrandAppPage from './pages/ErrandAppPage';
+import MHPCPage from './pages/MHPCPage';
+import IceTPage from './pages/IceTPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        <Routes>
+          <Route index element={<HomePage />} ></Route>
+          <Route path='/aboutme' element={<AboutMePage />} ></Route>
+          <Route path='/projects' element={<ProjectsLayout />}>
+              <Route path='errandapp' element={<ErrandAppPage />}>
+                      </Route>
+              <Route path='microsofthpclone' element={<MHPCPage />}>
+                      </Route>
+              <Route path='icetapp' element={<IceTPage />}>
+                      </Route>
+          </Route>
+          <Route path='/contact' element={<ContactPage />} ></Route>
+        </Routes>
+      </Layout>
     </div>
   );
 }
