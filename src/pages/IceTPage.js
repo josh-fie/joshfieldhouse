@@ -3,7 +3,7 @@ import gitHubIcon from '../assets/github-sign.png';
 import webIcon from '../assets/web.png';
 
 
-function IceTPage(props) {
+function IceT(props) {
     return (
         <div>
             <h2>IceT App</h2>
@@ -17,4 +17,4 @@ function IceTPage(props) {
     )
 }
 
-export default IceTPage;
+export default IceT;

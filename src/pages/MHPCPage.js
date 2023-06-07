@@ -3,7 +3,7 @@ import gitHubIcon from '../assets/github-sign.png';
 import webIcon from '../assets/web.png';
 
 
-function MHPCPage(props) {
+function MHPC(props) {
     return (
         <div>
             <h2>Microsoft Homepage Clone App</h2>
@@ -17,4 +17,4 @@ function MHPCPage(props) {
     )
 }
 
-export default MHPCPage;
+export default MHPC;

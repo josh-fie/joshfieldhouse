@@ -3,7 +3,7 @@ import emailIcon from '../assets/email.png';
 import linkedinIcon from '../assets/linkedin.png';
 
 
-function ContactPage(props) {
+function Contact(props) {
     return (
         <div>
             <div>
@@ -20,4 +20,4 @@ function ContactPage(props) {
     )
 }
 
-export default ContactPage;
+export default Contact;

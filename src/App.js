@@ -14,21 +14,10 @@ import ContactPage from './pages/ContactPage';
 function App() {
   return (
     <div className="App">
-      <Layout>
-        <Routes>
-          <Route index element={<HomePage />} ></Route>
-          <Route path='/aboutme' element={<AboutMePage />} ></Route>
-          <Route path='/projects' element={<ProjectsLayout />}>
-              <Route path='errandapp' element={<ErrandAppPage />}>
-                      </Route>
-              <Route path='microsofthpclone' element={<MHPCPage />}>
-                      </Route>
-              <Route path='icetapp' element={<IceTPage />}>
-                      </Route>
-          </Route>
-          <Route path='/contact' element={<ContactPage />} ></Route>
-        </Routes>
-      </Layout>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* <Route path="*" element={<FourOhFour />} /> */}
+      </Routes>
     </div>
   );
 }

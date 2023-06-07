@@ -3,7 +3,7 @@ import gitHubIcon from '../assets/github-sign.png';
 import webIcon from '../assets/web.png';
 
 
-function ErrandAppPage(props) {
+function ErrandApp(props) {
     return (
         <div>
             <h2>Errand App</h2>
@@ -17,4 +17,4 @@ function ErrandAppPage(props) {
     )
 }
 
-export default ErrandAppPage;
+export default ErrandApp;
