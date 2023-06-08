@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink as Link } from 'react-router-dom';
 // import { HashLink as Link } from 'react-router-hash-link';
 import classes from './MainNavigation.module.css';
 
@@ -21,11 +21,11 @@ function MainNavigation(props) {
                 </div>
                 <div>
                     {/* <NavLink to={'/aboutme'} className={nav => (nav.isActive ? classes.linkActive : '')}>About</NavLink> */}
-                    <Link onClick={() => props.scrollToSection(props.about)}>About</Link>
+                    <Link onClick={() => props.scrollToSection(props.about)} >About</Link>
                 </div>
                 <div>
                     {/* <NavLink to={'/projects'} className={nav => (nav.isActive ? classes.linkActive : '')}>Projects</NavLink> */}
-                    <Link onClick={() => props.scrollToSection(props.projects)}>Projects</Link>
+                    <Link onClick={() => props.scrollToSection(props.projects)} >Projects</Link>
                 </div>
                 <div>
                     {/* <NavLink to={'/contact'} className={nav => (nav.isActive ? classes.linkActive : '')}>Contact</NavLink> */}

@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import gitHubIcon from '../assets/github-sign.png';
 import linkedInIcon from '../assets/linkedin.png';
 import tanzanite from '../assets/tanzanite.png';
+import portrait from '../assets/test_portrait.png';
 
 import classes from './HomePage.module.css';
 
@@ -44,15 +45,24 @@ function HomePage(props) {
                     </div>
                 </div>
                 <div className={classes.content}>
-                    <div>
+                    <div className={[classes.headerContainer, classes.anim].join(' ')}>
                         <h2>I am</h2>
                         <h1>Josh Fieldhouse</h1>
                         <h2>Front-End Web Developer</h2>
                     </div>
-                    <div className={classes.btnContainer}>
+                    <div className={[classes.btnContainer, classes.anim].join(' ')}>
                         <img src={gitHubIcon} alt='GitHub link' className={classes.btn}></img>
                         <img src={linkedInIcon} alt='LinkedIn link' className={classes.btn}></img>
                     </div>
+                </div>
+                {/* <div className={[classes.portraitContainer, classes.anim].join(' ')}>
+                    <img src={portrait} alt='Josh Fieldhouse portrait'></img>
+                </div> */}
+                <div className={classes.polygon}>
+                    <div className={[classes.portraitContainer, classes.anim].join(' ')}>
+                    <img src={portrait} alt='Josh Fieldhouse portrait'></img>
+                    </div>
+                    {/* Polygon Background Shape */}
                 </div>
             </section>
             <section ref={about}>

@@ -41,3 +41,27 @@ Video by Tom Fisk: https://www.pexels.com/video/aerial-view-of-a-foggy-landscape
 <a href="https://www.flaticon.com/free-icons/tanzanite" title="tanzanite icons">Tanzanite icons created by Freepik - Flaticon</a>
 
 **Tanzanite Birthstone icon**
+
+<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>
+
+**HTML5 Icon**
+
+<a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a>
+
+**CSS Icon**
+
+<a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>
+
+**Javascript Icon**
+
+<a href="https://www.flaticon.com/free-icons/tennis" title="tennis icons">Tennis icons created by Those Icons - Flaticon</a>
+
+**Tennis Icon**
+
+<a href="https://www.flaticon.com/free-icons/piano" title="piano icons">Piano icons created by Stockio - Flaticon</a>
+
+**Piano Icon**
+
+<a href="https://www.flaticon.com/free-icons/hook" title="hook icons">Hook icons created by Freepik - Flaticon</a>
+
+**Hook Icon**

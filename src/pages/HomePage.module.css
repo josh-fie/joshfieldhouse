@@ -66,8 +66,31 @@ h1 {
 	}
 }
 
+/* Polygon */
+
+.polygon {
+	width: 120vw;
+    height: 300px;
+    transform: rotate(-10deg);
+    position: absolute;
+    right: -10%;
+    bottom: -20%;
+    background-color: limegreen;
+}
+
+.polygon::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:  linear-gradient(rgba(0,0,0,0), limegreen 50%);
+}
+
 section {
 	height: 100vh;
+	overflow: hidden;
 }
 
 .showcase {
@@ -86,6 +109,14 @@ section {
 	margin-left: 10%;
 }
 
+.content .headerContainer.anim {
+	animation-delay: 1s;
+}
+
+.content .btnContainer.anim {
+	animation-delay: 1.5s;
+}
+
 .btnContainer {
     padding: 15px 0px;
 }
@@ -100,4 +131,42 @@ section {
 
 .btn:hover {
 	transform: scale(0.90);
+	filter: brightness(0) saturate(100%) invert(88%) sepia(77%) saturate(5045%) hue-rotate(128deg) brightness(89%) contrast(86%);
+	cursor: pointer;
+}
+
+/* Portrait */
+
+.portraitContainer {
+	position: absolute;
+    height: 500px;
+    width: 300px;
+    transform: unset;
+    right: 15%;
+    top: -110%;
+    /* z-index: 10;*/
+}
+
+.portraitContainer.anim {
+	animation-delay: 2s;
+}
+
+.portraitContainer img {
+	width: 100%;
+}
+
+/* Animation Move Up */
+
+.anim {
+	opacity: 0;
+	transform: translateY(50px);
+	animation: moveUp 1s linear forwards;
+	/* animation-delay: 1s; */
+}
+
+@keyframes moveUp {
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }

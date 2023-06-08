@@ -30,5 +30,5 @@
 }
 
 .nav a.linkActive {
-    background-color: turquoise;
+    border-bottom: 2px solid turquoise;
 }
