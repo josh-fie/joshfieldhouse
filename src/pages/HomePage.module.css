@@ -89,7 +89,6 @@ h1 {
 }
 
 section {
-	height: 100vh;
 	overflow: hidden;
 }
 
@@ -102,6 +101,7 @@ section {
 	text-align: left;
 	color: rgb(0, 132, 134);
     position: relative;
+	height: 100vh;
 }
 
 .content {

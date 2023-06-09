@@ -22,7 +22,8 @@
 
 .section:nth-of-type(3) {
     background-color: limegreen;
-    color: rgb(0, 132, 134);
+    /* color: rgb(0, 132, 134); */
+    color: white;
 }
 
 .section {
@@ -30,6 +31,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding: 100px 0px;
 }
 
 .section h3 {
@@ -52,7 +54,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 0px;
+    padding: 50px 0px;
 }
 
 .skills .indIcons, .interests .indIcons {
