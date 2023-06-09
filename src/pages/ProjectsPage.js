@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ErrandApp from './ErrandAppPage';
 import MHPC from './MHPCPage';
 import IceT from './IceTPage';
@@ -11,15 +11,21 @@ import classes from './ProjectsPage.module.css';
 
 function Projects(props) {
     const [project, setProject] = useState(1);
+    const [backgroundImage, setBackgroundImage] = useState(classes.projectSection1);
 
     const handleProjectState = function(num) {
         setProject(num);
+
+        let background;
+        if(num === 1) {background = classes.projectSection1}
+        if(num === 2) {background = classes.projectSection2}
+        if(num === 3) {background = classes.projectSection3}
+        setBackgroundImage(background);
     }
 
-
     return (
-        <div className={classes.projectSection}>
-            <h3>Projects</h3>
+        <div className={backgroundImage}>
+            <h3 className={classes.header}>Projects</h3>
             <div>
                 <ProjectsNavigation setProject={handleProjectState}/>
             </div>
