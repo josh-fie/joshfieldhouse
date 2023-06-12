@@ -11,20 +11,26 @@ import classes from './ProjectsPage.module.css';
 
 function Projects(props) {
     const [project, setProject] = useState(1);
-    const [backgroundImage, setBackgroundImage] = useState(classes.projectSection1);
+    const [backgroundImage, setBackgroundImage] = useState(errandAppData.images[5]);
 
     const handleProjectState = function(num) {
+        let background;
+        // if(num === 1) {background = '../assets/Screenshots/ErrandApp_screenshots/Screenshot_Homepage_Large.JPG'}
+        if(num === 1) {background = errandAppData.images[4]};
+        // if(num === 2) {background = '../assets/Screenshots/Microsoft_screenshots/Screenshot_Mid_Large.JPG'}
+        if(num === 2) {background = MHPCData.images[4]};
+        // if(num === 3) {background = '../assets/Screenshots/IceT_screenshots/Screenshot_Home_Fullscreen.JPG'}
+        if(num === 3) {background = iceTAppData.images[4]};
+
+        setBackgroundImage(background);
+        // Spinner - when above completed then setProject
+        
         setProject(num);
 
-        let background;
-        if(num === 1) {background = classes.projectSection1}
-        if(num === 2) {background = classes.projectSection2}
-        if(num === 3) {background = classes.projectSection3}
-        setBackgroundImage(background);
     }
 
     return (
-        <div className={backgroundImage}>
+        <div className={classes.projectContainer}>
             <h3 className={classes.header}>Projects</h3>
             <div>
                 <ProjectsNavigation setProject={handleProjectState}/>
@@ -36,6 +42,11 @@ function Projects(props) {
             {project === 2 ? <MHPC data={MHPCData}/> : null }
             {project === 3 ? <IceT data={iceTAppData}/> : null }
             </div>
+            <img
+                class={classes.backgroundActive}
+                src={backgroundImage}
+                alt=""
+            ></img>
         </div>
     )
 }

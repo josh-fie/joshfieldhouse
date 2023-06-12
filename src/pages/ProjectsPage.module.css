@@ -4,36 +4,35 @@
     font-size: 2rem;
 }
 
-.projectSection1 {
+.projectContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.projectContainer .backgroundActive {
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+/* .projectSection1 {
     background-image: url('../assets/Screenshots/ErrandApp_screenshots/Screenshot_Homepage_Large.JPG');
     position: relative;
 }
 
-.overlay {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../assets/Screenshots/ErrandApp_screenshots/Screenshot_Homepage_Large.JPG');
-    opacity: 0.4;
-    /* background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover; */
-}
-
 .projectSection2 {
-    /* background-color: black; */
+    /* background-color: black;
     background-image: url('../assets/Screenshots/Microsoft_screenshots/Screenshot_Mid_Large.JPG');
 }
 
 .projectSection3 {
-    /* background-color: yellow; */
+    /* background-color: yellow;
     background-image: url('../assets/Screenshots/IceT_screenshots/Screenshot_Home_Fullscreen.JPG');
-}
+} */
 
 .infoContainer {
     display: grid;

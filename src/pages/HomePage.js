@@ -3,7 +3,8 @@ import { useRef } from 'react';
 import gitHubIcon from '../assets/github-sign.png';
 import linkedInIcon from '../assets/linkedin.png';
 import tanzanite from '../assets/tanzanite.png';
-import portrait from '../assets/test_portrait.png';
+import portrait_template from '../assets/test_portrait.png';
+import portrait from '../assets/Screenshots/self-portrait_edited.png';
 
 import classes from './HomePage.module.css';
 
