@@ -10,29 +10,33 @@
 }
 
 .projectContainer .backgroundActive {
-  opacity: 0.3;
+  opacity: 0.6;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   z-index: -1;
 }
 
-/* .projectSection1 {
-    background-image: url('../assets/Screenshots/ErrandApp_screenshots/Screenshot_Homepage_Large.JPG');
-    position: relative;
+.projectContainer .backgroundActive img {
+    padding: 25%;
+    width: 100%;
+}
+ .project1Colour {
+    background-color: darkslategray;
+    opacity: 0.4;
 }
 
-.projectSection2 {
-    /* background-color: black;
-    background-image: url('../assets/Screenshots/Microsoft_screenshots/Screenshot_Mid_Large.JPG');
+.project2Colour {
+    background-color: yellow;
+    opacity: 0.4;
 }
 
-.projectSection3 {
-    /* background-color: yellow;
-    background-image: url('../assets/Screenshots/IceT_screenshots/Screenshot_Home_Fullscreen.JPG');
-} */
+.project3Colour {
+    background-color: lightblue;
+    opacity: 0.4;
+}
 
 .infoContainer {
     display: grid;
@@ -45,6 +49,9 @@
 
 .infoContainer > div:nth-of-type(1) {
     grid-column: 1 / 3;
+    background-color: white;
+    box-shadow: 0px 0px 6px 1px rgb(0 0 0 / 40%);
+    padding: 20px;
 }
 
 .infoContainer > div:nth-of-type(2) {

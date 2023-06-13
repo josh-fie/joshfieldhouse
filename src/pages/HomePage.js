@@ -53,12 +53,10 @@ function HomePage(props) {
                     </div>
                     <div className={[classes.btnContainer, classes.anim].join(' ')}>
                         <img src={gitHubIcon} alt='GitHub link' className={classes.btn}></img>
-                        <img src={linkedInIcon} alt='LinkedIn link' className={classes.btn}></img>
+                        {/* <p>GitHub</p> */}
+                        {/* <img src={linkedInIcon} alt='LinkedIn link' className={classes.btn}></img> */}
                     </div>
                 </div>
-                {/* <div className={[classes.portraitContainer, classes.anim].join(' ')}>
-                    <img src={portrait} alt='Josh Fieldhouse portrait'></img>
-                </div> */}
                 <div className={classes.polygon}>
                     <div className={[classes.portraitContainer, classes.anim].join(' ')}>
                     <img src={portrait} alt='Josh Fieldhouse portrait'></img>

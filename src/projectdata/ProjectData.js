@@ -27,7 +27,8 @@ import mhpc_large2 from '../assets/Screenshots/Microsoft_screenshots/Screenshot_
 // Data Objects
 
 export const errandAppData = {
-    description: 'Test Description',
+    description: 'Test',
+    // description: 'Developed with React.js, this app incorporates React hooks, react router plugin and functional components. The errandapp provides a place where a user can add an errand to the errand list by clicking on the map at a destination. The Geolocation API is used to identify the user's location to center the map and Leaflet.js is used to handle clicks on the map to identify coordinates for destinations and add markers onto the map.',
     links: {
         github: 'https://github.com/josh-fie/ErrandApp',
         live: 'https://errandapp.netlify.app'
@@ -36,7 +37,7 @@ export const errandAppData = {
 };
 
 export const iceTAppData = {
-    description: '',
+    description: 'This application provides an ordering interface for placing an ice-cream and tea order, favouriting your orders to localStorage, and receiving an order number upon placement. This app was built using vanilla Javascript, HTML and CSS without frameworks.',
     links: {
         github: 'https://github.com/josh-fie/IceT-',
         live: 'https://icet-site.netlify.app'
@@ -45,7 +46,7 @@ export const iceTAppData = {
 };
 
 export const MHPCData = {
-    description: '',
+    description: 'Test',
     links: {
         github: 'https://github.com/josh-fie/MicrosoftHomepageClone',
         live: 'https://microsofthpclone.netlify.app'
