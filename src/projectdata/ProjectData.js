@@ -27,13 +27,26 @@ import mhpc_large2 from '../assets/Screenshots/Microsoft_screenshots/Screenshot_
 // Data Objects
 
 export const errandAppData = {
-    description: 'Test',
-    // description: 'Developed with React.js, this app incorporates React hooks, react router plugin and functional components. The errandapp provides a place where a user can add an errand to the errand list by clicking on the map at a destination. The Geolocation API is used to identify the user's location to center the map and Leaflet.js is used to handle clicks on the map to identify coordinates for destinations and add markers onto the map.',
+
+    description: 'Developed with React.js, this app incorporates React hooks, react router plugin and functional components. The user can add an errand to the errand list by clicking on the map at a destination. The Geolocation API is used to identify the users location to center the map and Leaflet.js is used to handle clicks on the map to identify coordinates for destinations and add markers onto the map.',
     links: {
         github: 'https://github.com/josh-fie/ErrandApp',
         live: 'https://errandapp.netlify.app'
     },
-    images: [errand_small1, errand_small2, errand_medium1, errand_medium2, errand_large1, errand_large2]
+    images: [
+        {
+            src: errand_small1,
+            id: 1},
+        {   src: errand_small2,
+            id: 2},
+        {   src: errand_medium1,
+            id: 3},
+        {   src: errand_medium2,
+            id: 4}, 
+        {   src: errand_large1,
+            id: 5},
+        {   src: errand_large2,
+            id: 6}]
 };
 
 export const iceTAppData = {
@@ -42,14 +55,38 @@ export const iceTAppData = {
         github: 'https://github.com/josh-fie/IceT-',
         live: 'https://icet-site.netlify.app'
     },
-    images: [iceT_small1, iceT_small2, iceT_medium1, iceT_medium2, iceT_large1, iceT_large2]
+    images: [
+        {   src: iceT_small1,
+            id: 7},
+        {   src: iceT_small2,
+            id: 8},
+        {   src: iceT_medium1,
+            id: 9}, 
+        {   src: iceT_medium2,
+            id: 10},
+        {   src: iceT_large1,
+            id: 11},
+        {   src: iceT_large2,
+            id: 12}]
 };
 
 export const MHPCData = {
-    description: 'Test',
+    description: 'This project showcases a design clone of a snapshot of the Microsoft Homepage from 2022 combined with a snapshot of the homepage from April 2023 made to accomodate responsiveness across all sizes from small mobile devices to large screens. This clone was constructed from scratch with CSS and Javascript to add matching drodown and searchbar functionality',
     links: {
         github: 'https://github.com/josh-fie/MicrosoftHomepageClone',
         live: 'https://microsofthpclone.netlify.app'
     },
-    images: [mhpc_small1, mhpc_small2, mhpc_medium1, mhpc_medium2, mhpc_large1, mhpc_large2]
+    images: [
+        {   src: mhpc_small1,
+            id: 13},
+        {   src: mhpc_small2,
+            id: 14},
+        {   src: mhpc_medium1,
+            id: 15}, 
+        {   src: mhpc_medium2,
+            id: 16},
+        {   src: mhpc_large1,
+            id: 17},
+        {   src: mhpc_large2,
+            id: 18}]
 };

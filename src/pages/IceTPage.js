@@ -2,6 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import gitHubIcon from '../assets/github-sign.png';
 import webIcon from '../assets/web.png';
 
+import LinkButtons from '../components/LinkButtons';
 import ScreenshotGenerator from '../components/ScreenshotGenerator';
 
 function IceT(props) {
@@ -10,15 +11,11 @@ function IceT(props) {
             <div>
                 <h2>IceT App</h2>
                 <div>
-                {console.log(props)}
-                    <Link to={props.data.links.github}><img src={gitHubIcon} alt='View Project on GitHub'></img></Link>
-                    <span>Code</span>
-                    <Link to={props.data.links.live}><img src={webIcon} alt='View Deployed Project'></img></Link>
-                    <span>Live</span>
+                    <LinkButtons data={props.data}/>
                 </div>
                 <div><p>{props.data.description}</p></div>
             </div>
-            <ScreenshotGenerator images={props.data.images}/>
+            <ScreenshotGenerator images={props.data.images} setVisible={props.setVisible} setImgId={props.setImgId}/>
         </>
     )
 }

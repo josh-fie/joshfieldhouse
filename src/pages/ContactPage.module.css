@@ -1,3 +1,7 @@
+.div {
+    position: relative;
+}
+
 .header {
     text-align: center;
     padding: 50px;
@@ -6,10 +10,16 @@
 
 .infoContainer {
     width: 100%;
-    padding: 10%;
+    padding: 0 10% 10% 10%;
 }
 
 .infoContainer > div {
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+.infoContainer > div > div {
     margin: 10px 0;
 }
 

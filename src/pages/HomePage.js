@@ -57,7 +57,7 @@ function HomePage(props) {
                         {/* <img src={linkedInIcon} alt='LinkedIn link' className={classes.btn}></img> */}
                     </div>
                 </div>
-                <div className={classes.polygon}>
+                <div className="polygon">
                     <div className={[classes.portraitContainer, classes.anim].join(' ')}>
                     <img src={portrait} alt='Josh Fieldhouse portrait'></img>
                     </div>

@@ -1,35 +1,47 @@
 import classes from './ScreenshotGenerator.module.css';
-import PopOutImage from './PopoutImage';
-import { useState } from 'react';
+import { useState, useEffect, CSSProperties } from 'react';
+import BarLoader from "react-spinners/BarLoader"; 
+
+import Loader from './Loader';
 
 function ScreenshotGenerator(props) {
-
-    const [expanded, setExpanded] = useState(false);
+    const [isLoading, setLoading] = useState(true);
 
     const images = props.images;
-    let clickedDiv;
 
-    const handleImgClick = function(e) {
-        clickedDiv = e.target.parentNode;
+    // This Array awaits onLoad completion for all images rendered then sets loading state to false
+    let imgLoadArray = [];
 
-        if(!expanded) {
-        // Add expanded class (fixed position)
-            clickedDiv.classList.add('expanded');
-            setExpanded(true);
-
-        } else if(expanded && clickedDiv.classList.contains('expanded')) {
-            clickedDiv.classList.remove('expanded');
-            setExpanded(false);
-        } else console.log('Already expanded an image')
+    function imgLoadTest(index) {
+        imgLoadArray.push(`img loaded: ${index}`);
+        // Check array length and setLoading false
+        console.log(`${index} done`);
+        if(imgLoadArray.length === 6) {
+            setLoading(false);
+            console.log(`All 6 loaded`);
+        };
     }
 
+
+    const handleImgClick = function(e, id) {
+
+        // SetVisible - from above set to true
+        props.setVisible(true);
+
+        // Set Clicked Image - setImgId from above
+        props.setImgId(id);
+    }
+
+    // If Images loaded then divs containing images become visible.
+    const invisibleClass = isLoading ? classes.notVisible : null;
+
     return (
-        <>
-            {/* {popupVisible ? <PopOutImage image={clicked} /> : null} */}
-            {images.map((obj, index) => {
-                return <div className={classes.imgContainer} onClick={e => handleImgClick(e)}><img src={obj} key={index}></img></div>
-            })}
-        </>
+    <>
+        {isLoading ? <Loader classtitle={classes.loader}/> : null}
+        {images.map((obj, index) => {
+        return <div key={obj.id} className={[classes.imgContainer, invisibleClass].join(' ')} onClick={(e) => handleImgClick(e, obj.id)}><img src={obj.src} uniq={obj.id} onLoad={() => imgLoadTest(index)}></img></div>}
+        )}
+    </>
     )
 };
 

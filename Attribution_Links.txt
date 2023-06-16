@@ -36,6 +36,8 @@ Video by Tom Fisk: https://www.pexels.com/video/aerial-view-of-a-foggy-landscape
 
 <a href="https://www.flaticon.com/free-icons/microsoft" title="microsoft icons">Microsoft icons created by Retinaicons - Flaticon</a>
 
+<a href="https://iconscout.com/icons/windows" target="_blank">Free Windows Icon</a> by <a href="https://iconscout.com/contributors/unicons" target="_blank">Unicons Font</a>
+
 **Microsoft (Windows) logo**
 
 <a href="https://www.flaticon.com/free-icons/tanzanite" title="tanzanite icons">Tanzanite icons created by Freepik - Flaticon</a>

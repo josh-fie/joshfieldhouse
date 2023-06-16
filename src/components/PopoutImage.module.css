@@ -5,15 +5,23 @@
     width: 100%;
     height: 100%;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.75);
 }
 
-.popoutDiv > button {
+.popoutDiv > p {
+    display: block;
     position: absolute;
     top: 0;
-    right: 0;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    animation: ;
 }
 
 .popoutDiv > img {
-    margin: 0 auto;
-    width: 90%;
+    max-width: 90%;
+    max-height: 80%;
 }

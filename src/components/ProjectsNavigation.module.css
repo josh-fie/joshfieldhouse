@@ -7,8 +7,8 @@
     justify-content: space-evenly;
     align-items: center;
     /* background-color: rgba(0, 0, 0, 0.4); */
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 
 .projectNav > div {
@@ -17,15 +17,16 @@
 
 .projectNav img {
     width: 40px;
+    filter: invert();
 }
 
 .projectNav div:hover {
     transform: scale(0.90);
-    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid white;
+    cursor: pointer;
 }
 
 .projectNav div.active {
     transform: scale(0.90);
-    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.4);
-    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 5px solid white;
 }
