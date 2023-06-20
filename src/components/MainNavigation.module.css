@@ -32,3 +32,9 @@
 .nav a.linkActive {
     border-bottom: 2px solid turquoise;
 }
+
+@media (min-width: 1441px) {
+    .nav {
+        font-size: 1.5rem;
+    }
+}

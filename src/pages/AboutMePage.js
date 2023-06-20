@@ -59,7 +59,7 @@ function AboutMe(props) {
                     </div>
                     <div className={classes.indIcons}>
                         <img src={hook} alt='Construction & Transport'></img>
-                        <span>Construction & Transport</span>
+                        <span>Construction</span>
                     </div>
                 </div>
             </div>

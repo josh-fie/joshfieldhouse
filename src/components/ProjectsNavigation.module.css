@@ -30,3 +30,25 @@
     transform: scale(0.90);
     border-bottom: 5px solid white;
 }
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .projectNav {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .projectNav > div {
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .projectNav {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .projectNav > div {
+        padding: 0;
+    }
+}

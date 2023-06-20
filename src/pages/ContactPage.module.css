@@ -29,3 +29,13 @@
     background-color: lightblue;
     border: none;
 }
+
+@media (min-width: 1441px) {
+    .header {
+        font-size: 3rem;
+    }
+    
+    .infoContainer {
+        font-size: 2rem;
+    }
+}

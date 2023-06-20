@@ -170,3 +170,76 @@ section {
 		transform: translateY(0px);
 	}
 }
+
+/* Media Queries */
+
+@media (min-width: 1441px) {
+
+	h1 {
+		font-weight: 600;
+		font-size: 4rem;
+		line-height: 1.2;
+	}
+
+	.content {
+		font-size: 2rem;
+	}
+
+	.portraitContainer {
+		position: absolute;
+		height: 500px;
+		width: 500px;
+		transform: unset;
+		right: 10%;
+		top: -90%;
+		/* z-index: 10; */
+	}
+
+}
+
+@media (min-width: 1085px) and (max-width: 1440px) {
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+	.content {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.showcase {
+		align-items: unset;
+		justify-content: center;
+	}
+
+	.content {
+		margin-left: 0;
+	}
+
+	.portraitContainer {
+		position: absolute;
+		height: 250px;
+		width: 250px;
+		transform: unset;
+		right: 20%;
+		top: -75%;
+		/* z-index: 10;*/
+	}
+}
+
+@media (max-width: 425px) {
+
+	.content {
+		font-size: .75rem;
+	}
+
+	.portraitContainer {
+		position: absolute;
+		height: 250px;
+		width: 250px;
+		transform: unset;
+		right: 10%;
+		top: -75%;
+		/* z-index: 10;*/
+	}
+}

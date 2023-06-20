@@ -66,3 +66,35 @@ button:hover {
 	height: 100%;
 	background:  linear-gradient(rgba(0,0,0,0), var(--secondary-color) 50%);
 }
+
+/* Media Queries */
+
+@media (min-width: 1441px) {
+
+  button {
+      font-size: 2rem;
+  }
+
+  /* Polygon */
+
+  .polygon {
+    width: 120vw;
+      height: 600px;
+      transform: rotate(-10deg);
+      position: absolute;
+      right: -10%;
+      bottom: -30%;
+      background-color: var(--secondary-color);
+  }
+
+  .polygonContact {
+    width: 120vw;
+    height: 600px;
+    transform: rotate(-10deg);
+    position: absolute;
+    right: -10%;
+    z-index: -1;
+    bottom: -30%;
+    background-color: var(--secondary-color);
+  }
+}

@@ -30,7 +30,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 100px 0px;
+    padding: 100px 20px;
 }
 
 .section h3 {
@@ -39,7 +39,7 @@
 
 .Card {
     flex-basis: 60%;
-    padding: 50px;
+    padding: 50px 50px 50px 0px;
     font-size: 1.25rem;
 }
 
@@ -47,13 +47,17 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
     letter-spacing: 0rem;
-}
-
-.skills, .interests {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 50px 0px;
+}
+
+.skills {
+    padding: 50px 0px 50px 50px;
+}
+
+.interests {
+    padding: 50px 50px 50px 0px;
 }
 
 .skills .indIcons, .interests .indIcons {
@@ -65,4 +69,67 @@
 
 .indIcons img {
     width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+@media (min-width: 1441px) {
+    .Card {
+        flex-basis: 60%;
+        padding: 50px 50px 50px 0px;
+        font-size: 2rem;
+    }
+
+    .container h3 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .Card {
+        flex-basis: 60%;
+        padding: 50px;
+        font-size: 1.25rem;
+    }
+    
+    .skills, .interests {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        letter-spacing: 0rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .section {
+        display: block;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .Card {
+        flex-basis: unset;
+        padding: 25px;
+        font-size: 1rem;
+    }
+
+    .skills, .interests {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        letter-spacing: 0rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .section {
+        display: block;
+    }
 }
