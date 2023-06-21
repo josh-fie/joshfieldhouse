@@ -171,6 +171,13 @@ section {
 	}
 }
 
+/* Dropdown Nav Active Class (Other Classes on MainNav css) */
+
+.responsiveNav {
+    transform: none;
+    z-index: 20;
+}
+
 /* Media Queries */
 
 @media (min-width: 1441px) {

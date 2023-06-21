@@ -1,4 +1,6 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import gitHubIcon from '../assets/github-sign.png';
 import linkedInIcon from '../assets/linkedin.png';
@@ -15,12 +17,35 @@ import Contact from './ContactPage';
 
 function HomePage(props) {
 
+    const [dropdown, setDropdown] = useState(false);
+
     const home = useRef();
     const about = useRef();
     const projects = useRef();
     const contact = useRef();
 
-    const scrollToSection = (elementRef) => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
+    const toggleNav = function (ref) {
+        if(dropdown) {
+            console.log(ref);
+            ref.current.classList.toggle(`${classes.responsiveNav}`);
+            setDropdown(false);
+        }
+        if(!dropdown) {
+            console.log(ref);
+            ref.current.classList.toggle(`${classes.responsiveNav}`);
+            setDropdown(true);
+        }
+    }
+
+    useEffect(() => {
+        console.log(dropdown);
+    }, [dropdown])
+
+    const scrollToSection = (elementRef, navRef) => {
         console.log(elementRef.current);
         const element = elementRef.current;
         // window.scrollTo({
@@ -28,11 +53,16 @@ function HomePage(props) {
         //     behavior: "smooth"
         // })
         element.scrollIntoView({ behavior: 'smooth' });
+
+        // Toggle DropdownNav
+        if(dropdown) {
+            toggleNav(navRef)
+        } else return;
     }
 
     return (
         <div ref={home}>
-            <MainNavigation scrollToSection={scrollToSection} home={home} about={about} projects={projects} contact={contact}/>
+            <MainNavigation scrollToSection={scrollToSection} toggleNav={toggleNav} home={home} about={about} projects={projects} contact={contact}/>
             <section className={classes.showcase}>
                 <div className={classes.backgroundShapes}>
                     <div className={[classes.circle, classes.cfirst].join(' ')}>
@@ -64,13 +94,13 @@ function HomePage(props) {
                     {/* Polygon Background Shape */}
                 </div>
             </section>
-            <section ref={about}>
+            <section ref={about} data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                 <AboutMe />
             </section>
-            <section ref={projects}>
+            <section ref={projects} data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                 <Projects />
             </section>
-            <section ref={contact}>
+            <section ref={contact} data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                 <Contact />
             </section>
         </div>
