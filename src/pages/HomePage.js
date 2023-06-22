@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 import gitHubIcon from '../assets/github-sign.png';
 import linkedInIcon from '../assets/linkedin.png';
@@ -25,8 +26,35 @@ function HomePage(props) {
     const contact = useRef();
 
     useEffect(() => {
-        AOS.init();
+        // Fade in Sections on Scroll Down Page
+
+        const sectionArray = [about.current, projects.current, contact.current];
+
+        const revealSection = function (entries, observer) {
+            console.log(entries);
+            const [entry] = entries;
+
+            if (!entry.isIntersecting) return;
+
+            entry.target.classList.remove('section--hidden');
+
+            observer.unobserve(entry.target); //unobserves after hidden class removed first time so won't happen again.
+        };
+
+        const sectionObserver = new IntersectionObserver(revealSection, {
+        root: null,
+        threshold: 0,
+        });
+
+        sectionArray.forEach(function (section) {
+            console.log(section);
+            sectionObserver.observe(section);
+            section.classList.add('section--hidden');
+        });
+    //     AOS.init();
     }, []);
+
+    // Toggle Hamburger Menu
 
     const toggleNav = function (ref) {
         if(dropdown) {
@@ -45,14 +73,22 @@ function HomePage(props) {
         console.log(dropdown);
     }, [dropdown])
 
+    // Scroll to Section on Home Link Click
+
     const scrollToSection = (elementRef, navRef) => {
         console.log(elementRef.current);
         const element = elementRef.current;
-        // window.scrollTo({
-        //     top: elementRef.current.offsetTop,
-        //     behavior: "smooth"
-        // })
-        element.scrollIntoView({ behavior: 'smooth' });
+
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+
+        console.log(element, elementPosition, headerOffset);
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+    
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
 
         // Toggle DropdownNav
         if(dropdown) {
@@ -82,9 +118,10 @@ function HomePage(props) {
                         <h2>Front-End Web Developer</h2>
                     </div>
                     <div className={[classes.btnContainer, classes.anim].join(' ')}>
-                        <img src={gitHubIcon} alt='GitHub link' className={classes.btn}></img>
-                        {/* <p>GitHub</p> */}
-                        {/* <img src={linkedInIcon} alt='LinkedIn link' className={classes.btn}></img> */}
+                        {/* <img src={gitHubIcon} alt='GitHub link' className={classes.btn}></img> */}
+                        <Link to='https://github.com/josh-fie/' target="_blank" rel="noopener noreferrer"><button type='button'>GitHub
+            </button></Link>
+                        
                     </div>
                 </div>
                 <div className="polygon">
@@ -94,13 +131,13 @@ function HomePage(props) {
                     {/* Polygon Background Shape */}
                 </div>
             </section>
-            <section ref={about} data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
+            <section ref={about}>
                 <AboutMe />
             </section>
-            <section ref={projects} data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
+            <section ref={projects}>
                 <Projects />
             </section>
-            <section ref={contact} data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
+            <section ref={contact}>
                 <Contact />
             </section>
         </div>

@@ -1,5 +1,8 @@
 import { Link, NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
 import classes from './AboutMePage.module.css';
+// import Aos from 'aos';
+// import 'aos/dist/aos.css';
 
 import html from '../assets/html.png';
 import css from '../assets/css-3.png';
@@ -13,6 +16,13 @@ import hook from '../assets/hook.png';
 
 
 function AboutMe(props) {
+
+    // useEffect(() => {
+    //     Aos.init();
+    // }, []);
+
+    // data-aos="fade-up" data-aos-once="true" data-aos-delay="100"
+
     return (
         <div className={classes.container}>
             <div className={classes.section}>

@@ -88,9 +88,9 @@ h1 {
 	background:  linear-gradient(rgba(0,0,0,0), var(--secondary-color) 50%);
 } */
 
-section {
+/* section {
 	overflow: hidden;
-}
+} */
 
 .showcase {
 	background-color: white;
@@ -101,7 +101,7 @@ section {
 	text-align: left;
 	color: var(--primary-color);
     position: relative;
-	height: 100vh;
+	height: calc(100vh + 80px);
 }
 
 .content {
@@ -221,6 +221,7 @@ section {
 
 	.content {
 		margin-left: 0;
+		margin-top: 80px;
 	}
 
 	.portraitContainer {

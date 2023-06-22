@@ -14,7 +14,7 @@ function PopOutImage (props) {
 
     return (
     <div className={classes.popoutDiv} onClick={(e) => handleClickPopup(e)}>
-        <p>click / touch the screen to close</p>
+        <p>Click anywhere to close</p>
         <img src={filteredImg[0].src}></img>
     </div>
     )

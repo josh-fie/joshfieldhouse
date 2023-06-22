@@ -1,5 +1,8 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+// import Aos from 'aos';
+// import 'aos/dist/aos.css';
+
 import ErrandApp from './ErrandAppPage';
 import MHPC from './MHPCPage';
 import IceT from './IceTPage';
@@ -20,6 +23,10 @@ function Projects(props) {
     const [backgroundColour, setBackgroundColour] = useState(classes.project1Colour);
     const [popupVisible, setVisible] = useState(false);
     const [imgId, setImgId] = useState(null);
+
+    // useEffect(() => {
+    //     Aos.init();
+    // }, []);
 
     const allData=[errandAppData.images, MHPCData.images, iceTAppData.images];
 
@@ -47,6 +54,9 @@ function Projects(props) {
 
     }
 
+    // data-aos="fade-up" data-aos-once="true" data-aos-delay="100"
+    // AOS causing fixed position popoutImage to act like absolute
+    // useRef({current: null}) - Make use of current in useRef to map multiple refs into it on indexes. then use intersection observer to observe all. Cannot use hooks directly in map as per react.
     return (
         <div className={classes.projectContainer}>
             <h3 className={classes.header}>Projects</h3>
