@@ -1,16 +1,16 @@
-.div {
+/* .div {
     position: relative;
-}
+} */
 
-.header {
+/* .header {
     text-align: center;
     padding: 50px;
     font-size: 2rem;
-}
+} */
 
 .infoContainer {
     width: 100%;
-    padding: 0 10% 10% 10%;
+    /* padding: 0 10% 10% 10%; */
 }
 
 .infoContainer > div {
@@ -19,21 +19,21 @@
     padding: 10px;
 }
 
-.infoContainer > div > div {
+/* .infoContainer > div > div {
     margin: 10px 0;
-}
+} */
 
-.button {
+/* .button {
     border-radius: 5px;
     padding: 10px 20px;
     background-color: lightblue;
     border: none;
-}
+} */
 
 @media (min-width: 1441px) {
-    .header {
+    /* .header {
         font-size: 3rem;
-    }
+    } */
     
     .infoContainer {
         font-size: 2rem;

@@ -18,19 +18,19 @@ function Contact(props) {
     // data-aos="fade-up" data-aos-once="true" data-aos-delay="100"
 
     return (
-        <div className={classes.div}>
-            <h3 className={classes.header}>Contact Me</h3>
+        <div className="container">
+            <h1 className={classes.header}>Contact Me</h1>
             <div className={classes.infoContainer}>
                 <div>
                     <div>
                         <img src={emailIcon}></img>
                         <p>My CV</p>
-                        <button type='button' className={classes.button}>Open PDF</button>
+                        <button type='button'>Open PDF</button>
                     </div>
                     <div>
                         <img src={linkedinIcon}></img>
                         <p>LinkedIn Profile</p>
-                        <Link to="https://www.linkedin.com/hp"><button type='button' className={classes.button}>Go to</button></Link>
+                        <Link to="https://www.linkedin.com/hp"><button type='button'>Go to</button></Link>
                     </div>
                     <div>
                         <img src={emailIcon}></img>

@@ -58,8 +58,8 @@ function Projects(props) {
     // AOS causing fixed position popoutImage to act like absolute
     // useRef({current: null}) - Make use of current in useRef to map multiple refs into it on indexes. then use intersection observer to observe all. Cannot use hooks directly in map as per react.
     return (
-        <div className={classes.projectContainer}>
-            <h3 className={classes.header}>Projects</h3>
+        <div className="container">
+            <h1 className={classes.header}>Projects</h1>
             <div>
                 <ProjectsNavigation setProject={handleProjectState} project={project}/>
             </div>
