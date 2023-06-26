@@ -19,6 +19,7 @@ import Contact from './ContactPage';
 function HomePage(props) {
 
     const [dropdown, setDropdown] = useState(false);
+    // const [tablet, setTablet] = useState(false);
 
     const home = useRef();
     const about = useRef();
@@ -70,7 +71,7 @@ function HomePage(props) {
     }
 
     useEffect(() => {
-        console.log(dropdown);
+        console.log(`Dropdown: ${dropdown}`);
     }, [dropdown])
 
     // Scroll to Section on Home Link Click

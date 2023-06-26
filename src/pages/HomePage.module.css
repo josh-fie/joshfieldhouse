@@ -64,7 +64,6 @@
 }
 
 .content {
-    /* padding: 3rem; */
 	margin-left: 10%;
 }
 
@@ -103,7 +102,6 @@
     transform: unset;
     right: 15%;
     top: -110%;
-    /* z-index: 10;*/
 }
 
 .portraitContainer.anim {
@@ -120,7 +118,6 @@
 	opacity: 0;
 	transform: translateY(50px);
 	animation: moveUp 1s linear forwards;
-	/* animation-delay: 1s; */
 }
 
 @keyframes moveUp {
@@ -134,6 +131,7 @@
 
 .responsiveNav {
     transform: none;
+	/* visibility: visible; */
     z-index: 20;
 }
 
