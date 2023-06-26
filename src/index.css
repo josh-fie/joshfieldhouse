@@ -9,6 +9,7 @@
   --primary-light: rgb(95 162 163);
   --secondary-color: limegreen;
   --background-color: rgb(252, 243, 243);
+  --filtered-primary: invert(29%) sepia(68%) saturate(2974%) hue-rotate(162deg) brightness(88%) contrast(100%);
 }
 
 html, body {

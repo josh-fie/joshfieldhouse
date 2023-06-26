@@ -16,7 +16,8 @@ import hook from '../assets/hook.png';
 
 import photoPhones from '../assets/photo_phones.png';
 import photoBulb from '../assets/photo_laptop_light.png';
-import photoTennis from '../assets/photo_tennis.png';
+import photoCV from '../assets/photo_cv.png';
+import cvPDF from '../assets/Josh_Fieldhouse_CV.pdf';
 
 
 function AboutMe(props) {
@@ -33,9 +34,9 @@ function AboutMe(props) {
             <div className={classes.section}>
                 <h2>Background</h2>
                 <div className={classes.Card}>
+                    <p>"I have made a career change into web development and have constructed a set of projects showcased below following over a year of self-study and course completion. I am continuously learning new skills in both front and back end technologies."</p>
                     <p>"I have more than 5 years experience in customer services and administration in public and private sectors."</p>
                     <p>"With experience supervising and managing and working in teams and achieving departmental KPI's and targets."</p>
-                    <p>"I have made a career change into web development and have constructed a set of projects showcased below following over 1 year of self-study and course completion. I am continuously learning new skills in both front and back end technologies."</p>
                 </div>
                 <img src={photoPhones} alt="Telephones and tablet"></img>
             </div>
@@ -84,8 +85,8 @@ function AboutMe(props) {
                 <img src={photoBulb} alt="Laptop and lightbulb"></img>
             </div>
             <div className={classes.section}>
-                <h2>Interests / Hobbies</h2>
-                <div className={[classes.interests, classes.Card].join(' ')}>
+                <h2>Most Recent Work Experience</h2>
+                {/* <div className={[classes.interests, classes.Card].join(' ')}>
                     <Link to=''><button type='button'>Open CV</button></Link>
                     <div className={classes.indIcons}>
                         <img src={tennis} alt='Tennis'></img>
@@ -99,8 +100,27 @@ function AboutMe(props) {
                         <img src={hook} alt='Construction & Transport'></img>
                         <span>Construction</span>
                     </div>
+                </div> */}
+                <div className={classes.Card}>
+                    <div className={classes.work}>
+                        <div>
+                            <h3>Senior Administrator (Supervisor) - Traffic Process Unit</h3>
+                            <h4>Lincolnshire Police</h4>
+                            <h4>Lincoln, UK June 2021 - Feb 2023</h4>
+                        </div>
+                        <ul>
+                            <li>Supervising staff and workflow of the Traffic Department helping to train staff and troubleshoot departmental issues.</li>
+                            <li>Implementing new projects and process changes independently to the department using my own workflow.</li>
+                            <li>Meeting personal and departmental KPI’s for management and working in a large team 30+ staff</li>
+                            <li>Communicating written and oral information to the public as well as stakeholders.</li>
+                        </ul>
+                        <div>
+                            <span>View CV:</span>
+                            <Link to={cvPDF} target="_blank"><button type='button'>Open PDF</button></Link>
+                        </div>
+                    </div>
                 </div>
-                <img src={photoTennis} alt="Tennis court and tennis ball"></img>
+                <img src={photoCV} alt="Tennis court and tennis ball"></img>
             </div>
         </div>
     )

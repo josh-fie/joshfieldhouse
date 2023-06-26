@@ -24,17 +24,12 @@ function Contact(props) {
                 <div>
                     <div>
                         <img src={emailIcon}></img>
-                        <p>My CV</p>
-                        <button type='button'>Open PDF</button>
+                        <p>Email: josh.fieldhouse@yahoo.com</p>
                     </div>
                     <div>
                         <img src={linkedinIcon}></img>
                         <p>LinkedIn Profile</p>
-                        <Link to="https://www.linkedin.com/hp"><button type='button'>Go to</button></Link>
-                    </div>
-                    <div>
-                        <img src={emailIcon}></img>
-                        <p>Email: josh.fieldhouse@yahoo.com</p>
+                        <Link to="https://www.linkedin.com/in/josh-fieldhouse-web/" target='_blank'><button type='button'>Go To</button></Link>
                     </div>
                 </div>
             </div>

@@ -1,14 +1,16 @@
 .projectNav {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     height: 80px;
-    margin: 0 10%;
+    margin-bottom: 32px;
     justify-content: space-evenly;
     align-items: center;
     /* background-color: rgba(0, 0, 0, 0.4); */
     border-left: 1px solid var(--primary-color);
     border-right: 1px solid var(--primary-color);
+    position: relative;
+    z-index: 5;
 }
 
 .projectNav > div {
@@ -17,7 +19,7 @@
 
 .projectNav img {
     width: 40px;
-    /* filter: invert(); */
+    filter: var(--filtered-primary);
 }
 
 .projectNav div:hover {
@@ -32,21 +34,12 @@
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-    .projectNav {
-        width: 90%;
-        margin: 0 5%;
-    }
-
     .projectNav > div {
-        padding: 20px 25px;
+        padding: 10px 25px;
     }
 }
 
 @media (max-width: 425px) {
-    .projectNav {
-        width: 90%;
-        margin: 0 5%;
-    }
 
     .projectNav > div {
         padding: 0;

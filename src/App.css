@@ -162,3 +162,23 @@ section.section--hidden {
     background-color: var(--secondary-color);
   }
 }
+
+@media (min-width: 426px) and (max-width: 768px) {
+  section {
+    padding: 16px;
+  }
+
+  .container {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  section {
+    padding: 8px;
+  }
+
+  .container {
+    padding: 8px;
+  }
+}

@@ -3,7 +3,7 @@
 }
   
 .section h2 {
-    margin-bottom: 96px;
+    margin-bottom: 72px;
 }
   
 .section h3 {
@@ -74,11 +74,10 @@
 }
 
 
-.skills, .interests {
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* font-weight: 200; */
+.skills {
     letter-spacing: 0rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -90,7 +89,25 @@
     align-items: center;
 }
 
-.concepts > ul {
+.work {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.work > div:first-of-type {
+    margin-bottom: 16px;
+}
+
+.work > div:last-of-type {
+    align-self: flex-start;
+}
+
+.work > div:last-of-type > span {
+    margin-right: 16px;
+}
+
+.concepts > ul, .work > ul {
     margin-top: 16px;
     margin-bottom: 32px;
     display: flex;
@@ -100,9 +117,9 @@
     list-style-type: none;
 }
 
-/* .interests {
-    padding: 50px 50px 50px 0px;
-} */
+.work > ul li {
+    margin-bottom: 16px;
+}
 
 .skills .indIcons, .interests .indIcons {
     display: flex;
@@ -143,6 +160,10 @@
 
 @media (max-width: 768px) {
 
+    .section {
+        padding: 16px 8px;
+    }
+
     .section > img {
         position: absolute;
         top: 0;
@@ -157,15 +178,34 @@
         box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
         background-color: white;
         position: relative;
-        padding: 48px;
-        margin-bottom: 100px;
+        padding: 24px;
+        margin-bottom: 50px;
         z-index: 5;
         width: 100%;
         /* font-size: 1.25rem; */
     }
 
+    .concepts {
+        margin-top: 24px;
+    }
+
 }
 
 @media (max-width: 425px) {
-    
+    .concepts {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .concepts > ul, .work > ul {
+        margin-top: 16px;
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        list-style-type: none;
+    }
 }

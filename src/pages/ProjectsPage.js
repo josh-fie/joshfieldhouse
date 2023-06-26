@@ -60,21 +60,23 @@ function Projects(props) {
     return (
         <div className="container">
             <h1 className={classes.header}>Projects</h1>
-            <div>
-                <ProjectsNavigation setProject={handleProjectState} project={project}/>
-            </div>
-            {popupVisible ? <PopOutImage imageId={imgId} data={allData} setVisible={setVisible} visible={popupVisible}/> : null}
-            <div className={classes.infoContainer}>
-            {project === 1 ? <ErrandApp data={errandAppData} setVisible={setVisible} setImgId={setImgId}/> : null }
-            {project === 2 ? <MHPC data={MHPCData} setVisible={setVisible} setImgId={setImgId}/> : null }
-            {project === 3 ? <IceT data={iceTAppData} setVisible={setVisible} setImgId={setImgId}/> : null }
-            </div>
-            <div className={[classes.backgroundActive, backgroundColour].join(" ")}>
-            <img
-                // class={classes.backgroundActive}
-                src={backgroundImage}
-                alt=""
-            ></img>
+            <div className={classes.projectSection}>
+                <div>
+                    <ProjectsNavigation setProject={handleProjectState} project={project}/>
+                </div>
+                {popupVisible ? <PopOutImage imageId={imgId} data={allData} setVisible={setVisible} visible={popupVisible}/> : null}
+                <div className={classes.infoContainer}>
+                {project === 1 ? <ErrandApp data={errandAppData} setVisible={setVisible} setImgId={setImgId}/> : null }
+                {project === 2 ? <MHPC data={MHPCData} setVisible={setVisible} setImgId={setImgId}/> : null }
+                {project === 3 ? <IceT data={iceTAppData} setVisible={setVisible} setImgId={setImgId}/> : null }
+                </div>
+                <div className={[classes.backgroundActive, backgroundColour].join(" ")}>
+                <img
+                    // class={classes.backgroundActive}
+                    src={backgroundImage}
+                    alt=""
+                ></img>
+                </div>
             </div>
         </div>
     )

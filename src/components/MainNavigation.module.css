@@ -18,6 +18,7 @@ header {
 
 .navBtn img {
     width: 75%;
+    filter: var(--filtered-primary);
 }
 
 .navBtn:hover {
@@ -54,7 +55,7 @@ header {
 }
 
 .navBtn.closeBtn img {
-    filter: invert() brightness(90);
+    /* filter: invert() brightness(90); */
 }
 
 .nav > div {
@@ -100,11 +101,11 @@ header {
         width: 100vw;
         z-index: -10;
         /* z-index: 20; */
-        background-color: var(--secondary-color);
+        background-color: var(--background-color);
     }
 
     .nav > div > a {
-        color: white;
+        color: var(--primary-color);
         font-size: 2rem;
     }
 }
