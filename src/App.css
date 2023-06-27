@@ -107,12 +107,12 @@ h3 {
 
 /* Section for Fade-in Functionality */
 section {
-  transition: transform .6s ease-in, opacity .6s;
+  transition: transform .4s ease-in, opacity .4s;
 }
 
 section.section--hidden {
   opacity: 0;
-  transform: translateY(8rem);
+  transform: translateY(64px);
 }
 
 /* Media Queries */

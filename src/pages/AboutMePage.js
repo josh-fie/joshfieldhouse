@@ -1,18 +1,11 @@
-import { Link, NavLink } from 'react-router-dom';
-import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import classes from './AboutMePage.module.css';
-// import Aos from 'aos';
-// import 'aos/dist/aos.css';
 
 import html from '../assets/html.png';
 import css from '../assets/css-3.png';
 import js from '../assets/js2.png';
 import react from '../assets/react.png';
 import git from '../assets/git.png';
-
-import tennis from '../assets/tennis.png';
-import piano from '../assets/piano.png';
-import hook from '../assets/hook.png';
 
 import photoPhones from '../assets/photo_phones.png';
 import photoBulb from '../assets/photo_laptop_light.png';
@@ -21,12 +14,6 @@ import cvPDF from '../assets/Josh_Fieldhouse_CV.pdf';
 
 
 function AboutMe(props) {
-
-    // useEffect(() => {
-    //     Aos.init();
-    // }, []);
-
-    // data-aos="fade-up" data-aos-once="true" data-aos-delay="100"
 
     return (
         <div className="container">
@@ -86,21 +73,7 @@ function AboutMe(props) {
             </div>
             <div className={classes.section}>
                 <h2>Most Recent Work Experience</h2>
-                {/* <div className={[classes.interests, classes.Card].join(' ')}>
-                    <Link to=''><button type='button'>Open CV</button></Link>
-                    <div className={classes.indIcons}>
-                        <img src={tennis} alt='Tennis'></img>
-                        <span>Tennis</span>
-                    </div>
-                    <div className={classes.indIcons}>
-                        <img src={piano} alt='Keyboard'></img>
-                        <span>Keyboard</span>
-                    </div>
-                    <div className={classes.indIcons}>
-                        <img src={hook} alt='Construction & Transport'></img>
-                        <span>Construction</span>
-                    </div>
-                </div> */}
+                
                 <div className={classes.Card}>
                     <div className={classes.work}>
                         <div>

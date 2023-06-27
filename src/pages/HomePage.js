@@ -1,12 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
 
-import gitHubIcon from '../assets/github-sign.png';
-import linkedInIcon from '../assets/linkedin.png';
 import tanzanite from '../assets/tanzanite.png';
-import portrait_template from '../assets/test_portrait.png';
 import portrait from '../assets/Screenshots/self-portrait_edited.png';
 
 import classes from './HomePage.module.css';
@@ -19,6 +14,7 @@ import Contact from './ContactPage';
 function HomePage(props) {
 
     const [dropdown, setDropdown] = useState(false);
+
     // const [tablet, setTablet] = useState(false);
 
     const home = useRef();
@@ -27,17 +23,22 @@ function HomePage(props) {
     const contact = useRef();
 
     useEffect(() => {
-        // Fade in Sections on Scroll Down Page
 
         const sectionArray = [about.current, projects.current, contact.current];
 
+        // Fade in Sections on Scroll Down Page
+
         const revealSection = function (entries, observer) {
-            console.log(entries);
+            console.log(entries, observer);
             const [entry] = entries;
 
-            if (!entry.isIntersecting) return;
+            // Guard Clause
+            if (!entry.isIntersecting) return; 
 
-            entry.target.classList.remove('section--hidden');
+            // conditional so if class is present remove it otherwise just unobserve
+            if(entry.target.classList.contains('section--hidden')){
+                entry.target.classList.remove('section--hidden');
+            }
 
             observer.unobserve(entry.target); //unobserves after hidden class removed first time so won't happen again.
         };
@@ -52,6 +53,8 @@ function HomePage(props) {
             sectionObserver.observe(section);
             section.classList.add('section--hidden');
         });
+
+        console.log(sectionObserver);
     //     AOS.init();
     }, []);
 
@@ -77,15 +80,31 @@ function HomePage(props) {
     // Scroll to Section on Home Link Click
 
     const scrollToSection = (elementRef, navRef) => {
-        console.log(elementRef.current);
-        const element = elementRef.current;
 
-        const headerOffset = 80;
+        const sectionArray = [about.current, projects.current, contact.current];
+
+        // Where link is clicked remove hidden class if present and observer will be manually removed in background once sectino is intersected.
+        // if(elementRef.current.classList.contains('section--hidden')) {
+        //     console.log('Section hidden. Class to be removed now')
+        //     elementRef.current.classList.remove('section--hidden');
+        // }
+
+        console.log(sectionArray, elementRef.current);
+        const element = elementRef.current;
+        let headerOffset;
+
+        if(elementRef.current.classList.contains('section--hidden')) {
+            headerOffset = 144;
+            console.log('Section hidden. Offset increased');
+        } else {
+            headerOffset = 80;
+        }
+
         const elementPosition = element.getBoundingClientRect().top;
 
         console.log(element, elementPosition, headerOffset);
         const offsetPosition = elementPosition + window.scrollY - headerOffset;
-    
+
         window.scrollTo({
             top: offsetPosition,
             behavior: "smooth"

@@ -130,9 +130,9 @@
 /* Dropdown Nav Active Class (Other Classes on MainNav css) */
 
 .responsiveNav {
-    transform: none;
+    transform: none !important;
 	/* visibility: visible; */
-    z-index: 20;
+    z-index: 20 !important;
 }
 
 /* Media Queries */

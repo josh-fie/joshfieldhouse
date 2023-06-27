@@ -28,7 +28,7 @@ import mhpc_large2 from '../assets/Screenshots/Microsoft_screenshots/Screenshot_
 
 export const errandAppData = {
 
-    description: 'Developed with React.js, this app incorporates React hooks, react router plugin and functional components. The user can add an errand to the errand list by clicking on the map at a destination. The Geolocation API is used to identify the users location to center the map and Leaflet.js is used to handle clicks on the map to identify coordinates for destinations and add markers onto the map.',
+    description: 'Developed with React.js, this app incorporates React hooks, react router plugin and functional components. The user adds an errand by clicking on the map at a errand location and adding a name and description. The Geolocation API is used to identify the users location to center the map and Leaflet package is used to handle clicks and identify coordinates and add markers onto the map which then adds the errands to the errand list. From here the user prioritises, completes and deletes errands. Customisability includes larger text and light mode.',
     links: {
         github: 'https://github.com/josh-fie/ErrandApp',
         live: 'https://errandapp.netlify.app'
@@ -50,7 +50,7 @@ export const errandAppData = {
 };
 
 export const iceTAppData = {
-    description: 'This application provides an ordering interface for placing an ice-cream and tea order, favouriting your orders to localStorage, and receiving an order number upon placement. This app was built using vanilla Javascript, HTML and CSS without frameworks.',
+    description: 'This application provides an ordering interface for placing an ice-cream and tea order. A combination of items up to a basket maximum of 10 is allowed. Order price is calculated dynamically within the basket and upon order completion the user can favourite the order to localStorage whereupon it will be available upon future app visits. The user is then given an order number upon order placement. This app was built using vanilla Javascript DOM manipulation, HTML and CSS.',
     links: {
         github: 'https://github.com/josh-fie/IceT-',
         live: 'https://icet-site.netlify.app'
@@ -71,7 +71,7 @@ export const iceTAppData = {
 };
 
 export const MHPCData = {
-    description: 'This project showcases a design clone of a snapshot of the Microsoft Homepage from 2022 combined with a snapshot of the homepage from April 2023 made to accomodate responsiveness across all sizes from small mobile devices to large screens. This clone was constructed from scratch with CSS and Javascript to add matching drodown and searchbar functionality',
+    description: 'This project showcases a unique design of the Microsoft Homepage based on snapshots of the homepage from 2022 April 2023 made to accommodate responsiveness across all sizes from small mobile devices to large screens with media queries. No code was copied and the design was constructed from scratch implementing manual and automated slideshow, dropdowns, back to top button and search bar visibility to match the true site. This design was constructed with HTML, CSS and vanilla Javascript.',
     links: {
         github: 'https://github.com/josh-fie/MicrosoftHomepageClone',
         live: 'https://microsofthpclone.netlify.app'
