@@ -115,12 +115,7 @@
     } */
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
-
-    .projectSection {
-        padding: 16px 8px;
-      }
-
+@media (min-width: 426px) and (max-width: 1000px) {
     .infoContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -168,6 +163,13 @@
     .infoContainer > div:nth-of-type(6), .infoContainer > div:nth-of-type(7) {
         grid-column: span 2;
     }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .projectSection {
+        padding: 16px 8px;
+      }
 
 }
 

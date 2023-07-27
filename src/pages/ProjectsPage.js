@@ -6,13 +6,17 @@ import { useEffect, useState } from 'react';
 import ErrandApp from './ErrandAppPage';
 import MHPC from './MHPCPage';
 import IceT from './IceTPage';
+import FieldBank from './FieldBankPage';
+import PersWeb from './PersWebPage';
 import PopOutImage from '../components/PopoutImage';
 import ProjectsNavigation from '../components/ProjectsNavigation';
-import { errandAppData, MHPCData, iceTAppData } from '../projectdata/ProjectData';
+import { errandAppData, MHPCData, iceTAppData, fieldBankData, persWebData } from '../projectdata/ProjectData';
 
 import errandLogo from '../assets/errand_logo.png';
 import windowLogo from '../assets/windows_logo.png';
 import iceTLogo from '../assets/IceT_logo.png';
+import fieldLogo from '../assets/fieldbank_logo.png';
+import persWebLogo from '../assets/pers_web_logo.png';
 
 import classes from './ProjectsPage.module.css';
 
@@ -28,7 +32,7 @@ function Projects(props) {
     //     Aos.init();
     // }, []);
 
-    const allData=[errandAppData.images, MHPCData.images, iceTAppData.images];
+    const allData=[errandAppData.images, MHPCData.images, iceTAppData.images, fieldBankData.images, persWebData.images];
 
     const handleProjectState = function(num) {
         let background, bgColour;
@@ -44,6 +48,14 @@ function Projects(props) {
         if(num === 3) {
             background = iceTLogo;
             bgColour = classes.project3Colour;
+        };
+        if(num === 4) {
+            background = fieldLogo;
+            bgColour = classes.project1Colour;
+        };
+        if(num === 5) {
+            background = persWebLogo;
+            bgColour = classes.project2Colour;
         };
 
         setBackgroundImage(background);
@@ -69,6 +81,8 @@ function Projects(props) {
                 {project === 1 ? <ErrandApp data={errandAppData} setVisible={setVisible} setImgId={setImgId}/> : null }
                 {project === 2 ? <MHPC data={MHPCData} setVisible={setVisible} setImgId={setImgId}/> : null }
                 {project === 3 ? <IceT data={iceTAppData} setVisible={setVisible} setImgId={setImgId}/> : null }
+                {project === 4 ? <FieldBank data={fieldBankData} setVisible={setVisible} setImgId={setImgId}/> : null }
+                {project === 5 ? <PersWeb data={persWebData} setVisible={setVisible} setImgId={setImgId}/> : null }
                 </div>
                 <div className={[classes.backgroundActive, backgroundColour].join(" ")}>
                 <img

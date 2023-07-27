@@ -6,6 +6,8 @@ import css from '../assets/css-3.png';
 import js from '../assets/js2.png';
 import react from '../assets/react.png';
 import git from '../assets/git.png';
+import mysql from '../assets/mysql.png';
+import php from '../assets/php.png';
 
 import photoPhones from '../assets/photo_phones.png';
 import photoBulb from '../assets/photo_laptop_light.png';
@@ -51,6 +53,14 @@ function AboutMe(props) {
                             <img src={git} alt='Git'></img>
                             <span>Git</span>
                         </div>
+                        <div className={classes.indIcons}>
+                            <img src={php} alt='Php'></img>
+                            <span>Php</span>
+                        </div>
+                        <div className={classes.indIcons}>
+                            <img src={mysql} alt='mySql'></img>
+                            <span>mySQL</span>
+                        </div>
                     </div>
                     <div className={classes.concepts}>
                         <h3>Concepts / Technologies</h3>
@@ -63,8 +73,8 @@ function AboutMe(props) {
                         </ul>
                         <h3>Learning</h3>
                         <ul>
-                            <li>SQL</li>
-                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>SEO</li>
                             
                         </ul>
                     </div>

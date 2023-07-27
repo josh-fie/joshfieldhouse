@@ -1,3 +1,19 @@
+// FieldBank Images
+import field_small1 from '../assets/Screenshots/FieldBank_screenshots/Screenshot_homepage_small.JPG';
+import field_small2 from '../assets/Screenshots/FieldBank_screenshots/Screenshot_login_small.JPG';
+import field_medium1 from '../assets/Screenshots/FieldBank_screenshots/Screenshot_dashboard_medium.JPG';
+import field_medium2 from '../assets/Screenshots/FieldBank_screenshots/Screenshot_transfer_medium.JPG';
+import field_large1 from '../assets/Screenshots/FieldBank_screenshots/Screenshot_loan_large.JPG';
+import field_large2 from '../assets/Screenshots/FieldBank_screenshots/Screenshot_slider_large.JPG';
+
+// PersonalWebsite Images
+import pers_small1 from '../assets/Screenshots/PersonalWebsite_screenshots/Screenshot_aboutme_small.JPG';
+import pers_small2 from '../assets/Screenshots/PersonalWebsite_screenshots/Screenshot_contactme_small.JPG';
+import pers_medium1 from '../assets/Screenshots/PersonalWebsite_screenshots/Screenshot_projects_medium.JPG';
+import pers_medium2 from '../assets/Screenshots/PersonalWebsite_screenshots/Screenshot_skills_medium.JPG';
+import pers_large1 from '../assets/Screenshots/PersonalWebsite_screenshots/Screenshot_home_large.JPG';
+import pers_large2 from '../assets/Screenshots/PersonalWebsite_screenshots/Screenshot_projects_imgs_large.JPG';
+
 // ErrandApp Images
 import errand_small1 from '../assets/Screenshots/ErrandApp_screenshots/Screenshot_AddErrand_Small.JPG';
 import errand_small2 from '../assets/Screenshots/ErrandApp_screenshots/Screenshot_CompleteErrand_Small.JPG';
@@ -22,9 +38,53 @@ import mhpc_medium2 from '../assets/Screenshots/Microsoft_screenshots/Screenshot
 import mhpc_large1 from '../assets/Screenshots/Microsoft_screenshots/Screenshot_Dropdown_Cookies_Large.JPG';
 import mhpc_large2 from '../assets/Screenshots/Microsoft_screenshots/Screenshot_Mid_Large.JPG';
 
-// Bankist (Adjusted) Images
-
 // Data Objects
+
+export const fieldBankData = {
+
+    description: 'This website application was developed using php, mySQL and javascript and allows the user to view the bank homepage, login to two separate accounts as defined in the mySQL database using the usernames and passwords below. Once logged in you will be able to view your bank account summary, transfer and loan money. A php mySQL databse is used to store account data (money movements and movementDates) and is used to interact with and update the database given the operations performed in the application.',
+    links: {
+        github: 'https://github.com/josh-fie/fields_bank/tree/master',
+        live: 'https://fieldbwebsite.000webhostapp.com/'
+    },
+    images: [
+        {
+            src: field_small1,
+            id: 19},
+        {   src: field_small2,
+            id: 20},
+        {   src: field_medium1,
+            id: 21},
+        {   src: field_medium2,
+            id: 22}, 
+        {   src: field_large1,
+            id: 23},
+        {   src: field_large2,
+            id: 24}]
+};
+
+export const persWebData = {
+
+    description: 'My personal website was produced using React with a minimalist UI design and animations. The website provides an about me section where my job history and web dev skills are displayed, provides links to Github code for each of my projects on display and a contact me section. The website can quickly be updated with new projects given the modular nature of the code design and is fully accessible on all devices and sizes.',
+    links: {
+        github: 'https://github.com/josh-fie/joshfieldhouse/tree/master',
+        live: 'https://joshfieldhouse.netlify.app'
+    },
+    images: [
+        {
+            src: pers_small1,
+            id: 25},
+        {   src: pers_small2,
+            id: 26},
+        {   src: pers_medium1,
+            id: 27},
+        {   src: pers_medium2,
+            id: 28}, 
+        {   src: pers_large1,
+            id: 29},
+        {   src: pers_large2,
+            id: 30}]
+};
 
 export const errandAppData = {
 

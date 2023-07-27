@@ -14,7 +14,7 @@
 }
 
 .projectNav > div {
-    padding: 20px 50px;
+    padding: 10px 25px;
 }
 
 .projectNav img {
@@ -33,13 +33,13 @@
     border-bottom: 5px solid var(--primary-color);
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 450px) and (max-width: 768px) {
     .projectNav > div {
-        padding: 10px 25px;
+        padding: 5px 15px;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 449px) {
 
     .projectNav > div {
         padding: 0;
