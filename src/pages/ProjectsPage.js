@@ -22,8 +22,8 @@ import classes from './ProjectsPage.module.css';
 
 
 function Projects(props) {
-    const [project, setProject] = useState(1);
-    const [backgroundImage, setBackgroundImage] = useState(errandLogo);
+    const [project, setProject] = useState(4);
+    const [backgroundImage, setBackgroundImage] = useState(fieldLogo);
     const [backgroundColour, setBackgroundColour] = useState(classes.project1Colour);
     const [popupVisible, setVisible] = useState(false);
     const [imgId, setImgId] = useState(null);

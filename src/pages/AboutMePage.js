@@ -103,7 +103,7 @@ function AboutMe(props) {
                         </div>
                     </div>
                 </div>
-                <img src={photoCV} alt="Tennis court and tennis ball"></img>
+                <img src={photoCV} alt="Photo of CV"></img>
             </div>
         </div>
     )

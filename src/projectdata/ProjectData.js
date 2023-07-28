@@ -44,7 +44,7 @@ export const fieldBankData = {
 
     description: 'This website application was developed using php, mySQL and javascript and allows the user to view the bank homepage, login to two separate accounts as defined in the mySQL database using the usernames and passwords below. Once logged in you will be able to view your bank account summary, transfer and loan money. A php mySQL databse is used to store account data (money movements and movementDates) and is used to interact with and update the database given the operations performed in the application.',
     links: {
-        github: 'https://github.com/josh-fie/fields_bank/tree/master',
+        github: 'https://github.com/josh-fie/fields_bank',
         live: 'https://fieldbwebsite.000webhostapp.com/'
     },
     images: [
@@ -67,7 +67,7 @@ export const persWebData = {
 
     description: 'My personal website was produced using React with a minimalist UI design and animations. The website provides an about me section where my job history and web dev skills are displayed, provides links to Github code for each of my projects on display and a contact me section. The website can quickly be updated with new projects given the modular nature of the code design and is fully accessible on all devices and sizes.',
     links: {
-        github: 'https://github.com/josh-fie/joshfieldhouse/tree/master',
+        github: 'https://github.com/josh-fie/joshfieldhouse',
         live: 'https://joshfieldhouse.netlify.app'
     },
     images: [

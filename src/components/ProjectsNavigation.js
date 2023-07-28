@@ -16,6 +16,12 @@ function ProjectsNavigation(props) {
 
     return (
         <nav className={classes.projectNav}>
+            <div className={props.project === 4 ? classes.active : null} onClick={() => imgClickHandler(4)}>
+                <img src={fieldIcon}/>
+            </div>
+            <div className={props.project === 5 ? classes.active : null} onClick={() => imgClickHandler(5)}>
+                <img src={persWebIcon}/>
+            </div>
             <div className={props.project === 1 ? classes.active : null} onClick={() => imgClickHandler(1)}>
                 <img src={errandIcon}/>
             </div>
@@ -24,12 +30,6 @@ function ProjectsNavigation(props) {
             </div>
             <div className={props.project === 3 ? classes.active : null} onClick={() => imgClickHandler(3)}>
                 <img src={iceTIcon}/>
-            </div>
-            <div className={props.project === 4 ? classes.active : null} onClick={() => imgClickHandler(4)}>
-                <img src={fieldIcon}/>
-            </div>
-            <div className={props.project === 5 ? classes.active : null} onClick={() => imgClickHandler(5)}>
-                <img src={persWebIcon}/>
             </div>
         </nav>
     )
