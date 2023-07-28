@@ -42,7 +42,7 @@ import mhpc_large2 from '../assets/Screenshots/Microsoft_screenshots/Screenshot_
 
 export const fieldBankData = {
 
-    description: 'This website application was developed using php, mySQL and javascript and allows the user to view the bank homepage, login to two separate accounts as defined in the mySQL database using the usernames and passwords below. Once logged in you will be able to view your bank account summary, transfer and loan money. A php mySQL databse is used to store account data (money movements and movementDates) and is used to interact with and update the database given the operations performed in the application.',
+    description: 'This website application was developed using php, mySQL and javascript and allows the user to view the bank homepage, login to two separate accounts as defined in the mySQL database using the usernames and passwords below. Once logged in you will be able to view your bank account summary, transfer and loan money. A php mySQL database is used to store account data (money movements and movementDates) and is used to interact with and update the database given the operations performed in the application. Default User: name - Adam King (use for transfers) username -  default_user password - 1234. Secondary User: name - Sarah White (use for transfers) username - second_user password - 5678',
     links: {
         github: 'https://github.com/josh-fie/fields_bank',
         live: 'https://fieldbwebsite.000webhostapp.com/'
